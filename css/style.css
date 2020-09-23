@@ -47,6 +47,7 @@
 
 a {
   text-decoration: none;
+  color: var(--black);
 }
 
 img {
@@ -132,6 +133,23 @@ li {
 
 .login_link:focus,
 .check_in:focus {
+  color: var(--grey);
+}
+
+.my_orders,.personal_area {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--dark-blue);
+}
+
+.my_orders:hover,
+.personal_area:hover {
+  color: var(--red);
+}
+
+.my_orders:focus,
+.personal_area:focus,
+.authorized_user:focus {
   color: var(--grey);
 }
 
@@ -317,6 +335,54 @@ li {
   text-transform: uppercase;
 }
 
+/*-------catalog-main-section-bread_crumbs------*/
+.bread_crumbs {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.catalog_div_color_line {
+  background-color: var(--blue);
+}
+
+.catalog_div_color_line_text {
+  font-size: 30px;
+  line-height: 30px;
+  color: var(--dark-blue);
+  text-transform: uppercase;
+}
+
+.catalog_page {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--black);
+  text-transform: uppercase;
+}
+
+.catalog_article {
+  background-color: var(--white-blue);
+}
+
+.catalog_article h2 {
+  font-size: 30px;
+  line-height: 30px;
+  color: var(--black);
+  text-transform: uppercase;
+}
+
+.catalog_article p {
+  font-size: 13px;
+  line-height: 24px;
+}
+
 /*-------footer-section-footer-top-------*/
 .footer_top {
   background-color: var(--dark-blue);
@@ -354,12 +420,3 @@ li {
 .footer_bottom_text a {
   color: var(--white-yellow);
 }
-
-
-
-
-
-
-
-
-
