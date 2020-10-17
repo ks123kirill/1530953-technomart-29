@@ -11,7 +11,7 @@
 
 	<header class="main_header">
 		<div class="main_header_top">
-        <div class="header_top">
+        <div class="header_top_container flex_block center">
           <a class="header_top_item logo" href="">ТЕХНОМАРТ</a><!-- логотип-ссылка на главную страницу-->
           <a class="header_top_item header_search" href="">Поиск:</a>
           <a class="header_top_item header_marks" href="">Закладки: 0</a>
@@ -21,7 +21,7 @@
 		</div>
 
 		<div class="main_header_middle">
-      <div class="container">
+      <div class="header_middle_container flex_block center">
         <p class="header_middle_item header_desc">Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</p>
         <div class="header_middle_item">
           <a class="header_phone" href="tel:+7(812)555-05-55">+7 (812) 555-05-55</a>
@@ -34,9 +34,9 @@
       </div>
 		</div>
 
-		<div class="main_header_bottom">
+		<div class="main_header_bottom center">
 			<nav class="main_navigation">
-				<ul class="navigation_list">
+				<ul class="navigation_list flex_block">
 					<li class="navigation_item"><a href="">Главная</a></li>
 					<li class="navigation_item"><a href="">Компания</a></li>
 					<li class="navigation_item"><a href="">Каталог</a></li>
@@ -50,9 +50,9 @@
 	</header>
 
 	<main class="main_container">
-		<h1 class="visually_hidden">Техномарт</h1>
-		<section class="promo">
-			<h2 class="visually_hidden">Промо-блок</h2>
+		<!-- <h1 class="visually_hidden">Техномарт</h1> -->
+		<section class="promo center">
+			<!-- <h2 class="visually_hidden">Промо-блок</h2> -->
 			<ul class="promo_list">
 				<li class="promo_item materials">
           <p class="promo_item_text">Материалы</p>
@@ -85,29 +85,27 @@
     </section>
 
 		<section class="popular_products">
-			<h2 class="visually_hidden">Популярные товары</h2>
-			<div class="section_title_line popular_products_title_line">
+			<!-- <h2 class="visually_hidden">Популярные товары</h2> -->
+			<div class="section_title_line popular_products_title_line center">
 				<p class="section_title_line_text popular_products_title_text">Популярные товары:</p>
-				<button class="button button_red" type="button">Все популярные товары</button>
+				<button class="button button_red button_in_title_line" type="button">Все популярные товары</button>
 			</div>
-			<ul class="products_list">
+			<ul class="products_list center">
 				<li class="product_item">
-					<a href="">
-						<h3 class="product_item_title">Перфоратор BOSCH BFG 9000</h3>
-							<p>
-								<img src="img/perforator BOSCH BFG 9000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
-							</p>
+					<a class="product_item_a" href="">
+            <!-- <p class="product_item_img"> -->
+              <img src="img/perforator BOSCH BFG 9000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
+            <!-- </p> -->
           </a>
+          <h3 class="product_item_title">Перфоратор BOSCH BFG 9000</h3>
 					<p class="product_item_old_price">32500 Р.</p>
 					<button class="button product_item_new_price" type="button">25500 Р.</button>
 				</li>
 				<li class="product_item">
-					<a href="">
-						<h3 class="product_item_title">Перфоратор BOSCH BFG 3000</h3>
-							<p>
-								<img src="img/perforator BOSCH BFG 3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
-							</p>
-					</a>
+					<a class="product_item_a" href="">
+            <img src="img/perforator BOSCH BFG 3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
+          </a>
+          <h3 class="product_item_title">Перфоратор BOSCH BFG 3000</h3>
 					<p class="product_item_old_price">22500 Р.</p>
 					<button class="button product_item_new_price" type="button">15500 Р.</button>
 				</li>
@@ -127,17 +125,18 @@
 							<p>
                 <img src="img/perforator BOSCH BFG 2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
 							</p>
-					</a>
+          </a>
+          <p class="product_item_old_price"></p>
 					<button class="button product_item_new_price" type="button">12500 Р.</button>
 				</li>
 			</ul>
 		</section>
 
-		<section class="popular_producers">
-			<h2 class="visually_hidden">Популярные производители</h2>
+		<section class="popular_producers center">
+			<!-- <h2 class="visually_hidden">Популярные производители</h2> -->
 			<div class="section_title_line popular_producer_title">
 				<p class="section_title_line_text">Популярные производители:</p>
-				<button class="button button_red" type="button">Все производители</button>
+				<button class="button button_red button_in_title_line" type="button">Все производители</button>
 			</div>
 			<ul class="producers_list">
 				<li class="producer_item"><a href=""><img src="img/logo-bosch.svg" width="126" height="37" alt="логотип BOSCH"></a></li>
@@ -152,22 +151,28 @@
 		</section>
 
 		<section class="services">
-			<h2 class="services_title_text">Сервисы</h2>
-			<p class="services_text">Хороший интернет-магазин отличается от плохого не только ценами!<br>
-			Мы стараемся изо всех сил, чтобы сделать ваши услуги приятными.</p>
-
-			<!--Здесь будет слайдер -->
-			<button class="button services_slider_button">Доставка</button>
-			<button class="button services_slider_button">Гарантия</button>
-			<button class="button services_slider_button">Кредит</button>
-
-			<p class="services_title_text services_slider_item">Доставка</p>
-			<p class="services_text">Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно!<br>Ведь мы неплохо заработаем,<br>поднимая его на ваш этаж!</p>
-			<img src="img/service-delivery.svg" width="468" height="261" alt="Изображение игрушечного грузовика">
+      <div class="services_common_block center">
+        <div class="services_block_one">
+          <h2 class="services_title_text">Сервисы</h2>
+          <p class="services_text">Хороший интернет-магазин отличается от плохого не только ценами!<br>
+          Мы стараемся изо всех сил, чтобы сделать ваши услуги приятными.</p>
+        </div>
+        <!--Здесь будет слайдер -->
+        <div class="services_block_two">
+          <button class="button services_slider_button">Доставка</button>
+          <button class="button services_slider_button">Гарантия</button>
+          <button class="button services_slider_button">Кредит</button>
+        </div>
+        <div class="services_block_three">
+          <p class="services_title_text services_slider_item">Доставка</p>
+          <p class="services_text services_slider_item">Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно!<br>Ведь мы неплохо заработаем,<br>поднимая его на ваш этаж!</p>
+          <!-- <img src="img/service-delivery.svg" width="468" height="261" alt="Изображение игрушечного грузовика"> -->
+        </div>
+      </div>
 		</section>
 
-		<section class="contacts">
-			<h2 class="visually_hidden">Контакты</h2>
+		<section class="contacts center">
+			<!-- <h2 class="visually_hidden">Контакты</h2> -->
 			<div class="transport_company">
 				<p class="contacts_title_block">Компания &lt;&lt;Техномарт&gt;&gt;</p>
 				<p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для<br>ремонта и строительства не оставит равнодушными любителей сэкономить на<br>гастарбайтерах.</p>
@@ -189,11 +194,11 @@
 	</main>
 
 	<footer class="page_footer main_footer">
-    <div class="footer_top_one">
+    <div class="footer_top_one center">
       <div class="footer_top_logo">
         <a class="footer_logo logo" href="">ТЕХНОМАРТ</a><!-- логотип-ссылка на главную страницу-->
       </div>
-      <ul class="footer_top_container">
+      <ul class="footer_top_container flex_block">
         <li class="footer_top_one_item hover_underline"><a href="">Компания</a></li>
         <li class="footer_top_one_item hover_underline"><a href="">Новости</a></li>
         <li class="footer_top_one_item hover_underline"><a href="">Каталог</a></li>
@@ -202,11 +207,11 @@
       </ul>
     </div>
 
-    <div class="footer_top_two">
+    <div class="footer_top_two center">
       <div class="footer_top_two_address">
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>+7 (812) 555-05-55</p>
       </div>
-				<ul class="footer_top_container">
+				<ul class="footer_top_container flex_block">
 					<li class="footer_top_two_item hover_underline"><a href="">Материалы</a></li>
 					<li class="footer_top_two_item hover_underline"><a href="">Техника</a></li>
 					<li class="footer_top_two_item hover_underline"><a href="">Инструмент</a></li>
@@ -214,28 +219,30 @@
         </ul>
     </div>
 
-		<div class="footer_bottom">
-      <div class="footer_copyright">
-        <p class="copyright_text">© 2010–2019 Компания &lt;&lt;Техномарт&gt;&gt;<br>Все права защищены</p>
+    <div class="footer_bottom">
+      <div class="footer_bottom_container flex_block center">
+        <div class="footer_copyright">
+          <p class="copyright_text">© 2010–2019 Компания &lt;&lt;Техномарт&gt;&gt;<br>Все права защищены</p>
+        </div>
+        <div class="footer_social">
+          <ul class="social_list flex_block">
+            <li class="social_item">
+              <img src="https://via.placeholder.com/26x15" alt="Иконка Вконтакте">Вконтакте
+            </li>
+            <li class="social_item">
+              <img src="https://via.placeholder.com/26x15" alt="Иконка Фейсбук">Фейсбук
+            </li>
+            <li class="social_item">
+              <img src="https://via.placeholder.com/26x15" alt="Иконка Инстаграмм">Инстаграмм
+            </li>
+          </ul>
+        </div>
+        <div class="footer_reference flex_block">
+          <p class="reference_text hover_underline">Обратная связь:<br><a href="mailto:mail@htmlacademy.ru"> mail@htmlacademy.ru</a></p>
+          <p class="reference_text hover_underline">Разработано-<br><a href="https://htmlacademy.ru">htmlacademy.ru</a></p>
+        </div>
       </div>
-			<div class="footer_social">
-				<ul class="social_list">
-					<li class="social_item">
-						<img src="https://via.placeholder.com/26x15" alt="Иконка Вконтакте">Вконтакте
-					</li>
-					<li class="social_item">
-						<img src="https://via.placeholder.com/26x15" alt="Иконка Фейсбук">Фейсбук
-					</li>
-					<li class="social_item">
-						<img src="https://via.placeholder.com/26x15" alt="Иконка Инстаграмм">Инстаграмм
-					</li>
-        </ul>
-      </div>
-      <div class="footer_reference">
-        <p class="reference_text hover_underline">Обратная связь:<br><a href="mailto:mail@htmlacademy.ru"> mail@htmlacademy.ru</a></p>
-				<p class="reference_text hover_underline">Разработано-<br><a href="https://htmlacademy.ru">htmlacademy.ru</a></p>
-      </div>
-		</div>
+    </div>
 	</footer>
 
 	<!-- Заготовка для popap Write us-->
