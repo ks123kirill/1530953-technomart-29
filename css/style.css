@@ -40,11 +40,11 @@
   margin: 0 auto;
   padding: 0px;
   background-color: var(--grey);
-  box-sizing: border-box;
 }
 
 /*-------body-------*/
 .page_body {
+  box-sizing: border-box;
   min-height: 100%;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
@@ -71,8 +71,17 @@ li {
   list-style-type: none;
 }
 
+ ul {
+   margin: 0px;
+   padding: 0px;
+ }
+
 button {
   border: none;
+}
+
+p, h1, h2, h3 {
+  margin: 0px;
 }
 
 .button_red {
@@ -359,6 +368,9 @@ button {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
+  padding-right: 15px;
+  box-sizing: border-box;
+  padding-left: 30px;
 }
 
 .section_title_line_text {
@@ -366,17 +378,13 @@ button {
   line-height: 30px;
   color: var(--dark-blue);
   text-transform: uppercase;
-  margin-left: 30px;
-}
-
-.button_in_title_line {
-  margin-right: 15px;
+  margin: 0px;
 }
 
 .products_list {
   display: grid;
   grid-template-columns: repeat(4,220px);
-  grid-template-rows: 320px;
+  grid-template-rows: auto;
   gap: 20px 20px;
   padding: 0;
 }
@@ -384,33 +392,41 @@ button {
 .product_item {
   display: flex;
   flex-direction: column;
-  justify-content: stretch;
-  align-items: stretch;
-  padding: 0;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
   border: 1px solid var(--grey-border);
+  box-sizing: border-box;
 }
 
-.product_item_a {
-  width: 184px;
-  height: 165px;
-  margin: 5px 20px;
+.product_item div {
+  /* height: auto; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product_image {
+  width: 220px;
+  height: 170px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.product_item_title {
+.product_title {
   font-family: PT Sans;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
   color: var(--black);
-  height: 40px;
-  margin: 0px 20px;
+  padding: 5px 20px;
+  margin-bottom: auto;
 }
 
-.product_item_old_price {
+.product_old_price {
   font-family: PT Sans;
   font-style: normal;
   font-weight: bold;
@@ -419,21 +435,19 @@ button {
   text-decoration-line: line-through;
   text-transform: uppercase;
   color: var(--grey);
-  margin: 5px 25px 15px 25px;
-  vertical-align: middle;
+  padding: 15px 25px;
+  margin-top: auto;
 }
 
-.product_item_new_price {
+.button_new_price {
+  box-sizing: border-box;
+  width: 140px;
   height: 40px;
   font-family: PT Sans;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
-  text-transform: uppercase;
-  color: var(--white);
-  background-color: var(--red);
-  margin: 0px 30px 20px 50px;
 }
 
 /*-------main-section-popular_producers-------*/
@@ -442,8 +456,8 @@ button {
   margin-bottom: 60px;
 }
 
-.popular_producer_title button{
-  margin-right: 20px;
+.popular_producers div {
+  padding-right: 20px;
 }
 
 .producers_list {
@@ -473,6 +487,7 @@ button {
   grid-template-rows: 240px 240px;
   grid-template-columns: 305px 305px 305px;
   gap: 0px 15px;
+  padding-top: 65px;
 }
 
 .services_block_one {
@@ -481,8 +496,8 @@ button {
   grid-column-end: -1;
 }
 
-.services_block_one h2 {
-  margin-top: 65px;
+.services_block_one :first-child {
+  padding-bottom: 30px;
 }
 
 .template_one_title_text {
@@ -532,20 +547,12 @@ button {
   justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap;
-}
-
-.services_block_three img {
-  text-align: right;
+  text-align: left;
 }
 
 .services_block_three :first-child {
   color: var(--dark-blue);
-}
-
-.services_block_three :nth-child(2),
-.services_block_three :first-child {
-  margin-top: 0px;
-  text-align: left;
+  padding-bottom: 30px;
 }
 
 /*-------main-section-contacts-------*/
@@ -555,59 +562,50 @@ button {
   display: grid;
   grid-template-columns: 50% 17% 33%;
   grid-template-rows: auto;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 .transport_company {
   grid-column-start: 1;
   grid-column-end: 2;
   text-align: left;
-}
-
-.transport_company :first-child,
-.map p:nth-child(1) {
-  margin-top: 70px;
-  margin-bottom: 0px;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .transport_company p:nth-of-type(2),
  p:nth-of-type(3),
-.map p:nth-of-type(2),
-.map_image img {
-  margin-top: 30px;
-  margin-bottom: 0px;
+.map p:nth-of-type(2) {
+  padding-top: 30px;
+  padding-bottom: 0px;
 }
 
 .transport_company p:nth-of-type(4),
  p:nth-of-type(5) {
-  margin-top: 0px;
-  margin-bottom: 15px;
+  padding-top: 0px;
+  padding-bottom: 15px;
 }
 
 .transport_company p:nth-of-type(6) {
-  margin: 0px;
-}
-
-.transport_company button,
-.map button {
-  margin-top: 25px;
-  margin-bottom: 70px;
+  padding-bottom: 25px;
 }
 
 .map {
   grid-column-start: -2;
   grid-column-end: -1;
   text-align: left;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-/* .map_image {
-  /* width: 310px;
-  height: 160px; */
-  /* display: flex;
-  justify-content: stretch;
-  align-items: stretch; */
+.map_image {
+  padding-top: 30px;
+  padding-bottom: 25px;
+}
 
-.map_image img {
-  margin-top: 30px;
+.map button {
+  padding-right: 51px;
 }
 
 /*-------catalog-main-section-bread_crumbs------*/
@@ -670,20 +668,37 @@ button {
   background-color: var(--dark-blue);
 }
 
+.footer_top_one {
+  align-items: flex-start;
+}
+
+.footer_top_one .footer_top_container {
+  width: 550px;
+  height: 60px;
+  align-items: flex-end;
+}
+
+
 .footer_top_logo {
   width: 220px;
   height: 70px;
-  outline: 5px solid red;
-  outline-offset: -5px solid red;
-  display: block;
-  text-align: left;
-  float: left;
+  justify-content: center;
+  align-items: center;
+  /* border: 3px solid black; */
+  /* outline: 5px solid red;
+  outline-offset: -5px solid red; */
+}
+
+.footer_top_logo a {
+  color: var(--white);
+  padding: 20px 40px;
 }
 
 .footer_top_container {
-  outline: 5px solid red;
-  padding-top: 35px;
-  margin: 0px;
+  /* outline: 5px solid red; */
+  width: 550px;
+  height: 60px;
+  /* align-items: flex-end; */
 }
 
 .footer_top_one_item a {
