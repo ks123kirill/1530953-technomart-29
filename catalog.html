@@ -9,38 +9,46 @@
   </head>
   <body class="page_body">
 
-  <header class="main_header">
-		<div class="main_header_top">
-			<a class="logo" href="">ТЕХНОМАРТ</a><!-- логотип-ссылка на главную страницу-->
-			<a class="header_top_item header_search" href="">Поиск</a>
-			<a class="header_top_item header_marks" href="">Закладки</a>
-			<a class="header_top_item header_backet" href="">Корзина</a>
-			<a class="header_top_item header_checkout" href="">Оформить заказ</a>
-		</div>
+    <header class="main_header">
+      <div class="main_header_top">
+          <div class="header_top_container flex_block center">
+            <a class="header_top_item logo" href="">ТЕХНОМАРТ</a>
+            <a class="header_top_item header_search" href="">Поиск:</a>
+            <a class="header_top_item header_marks" href="">Закладки: 0</a>
+            <a class="header_top_item header_backet" href="">Корзина: 0</a>
+            <a class="header_top_item header_checkout" href="">Оформить заказ</a>
+          </div>
+      </div>
 
-		<div class="main_header_middle">
-			<p class="header_desc">Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</p>
-			<a class="header_phone" href="tel:+7(812)555-05-55">+7(812)555-05-55</a>
-			<p class="header_address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-			<a class="authorized_user" href="">Равшан Джамшутович</a>
-      <a class="my_orders" href="">Мои заказы</a>
-      <a class="personal_area" href="">Личный кабинет</a>
-		</div>
+      <div class="main_header_middle">
+        <div class="header_middle_container flex_block center">
+          <p class="header_middle_item header_desc">Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</p>
+          <div class="header_middle_item">
+            <a class="header_phone" href="tel:+7(812)555-05-55">+7 (812) 555-05-55</a>
+            <p class="header_address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          </div>
+          <div class="header_middle_item flex_block">
+            <a class="authorized_user" href="">Равшан Джамшутович</a>
+            <a class="my_orders" href="">Мои заказы</a>
+            <a class="personal_area" href="">Личный кабинет</a>
+          </div>
+        </div>
+      </div>
 
-		<div class="main_header_bottom">
-			<nav class="main_navigation">
-				<ul class="navigation_list">
-					<li class="navigation_item"><a href="">Главная</a></li>
-					<li class="navigation_item"><a href="">Компания</a></li>
-					<li class="navigation_item"><a href="">Каталог</a></li>
-					<li class="navigation_item"><a href="">Новости</a></li>
-					<li class="navigation_item"><a href="">Спецпредложения</a></li>
-					<li class="navigation_item"><a href="">Доставка</a></li>
-					<li class="navigation_item"><a href="">Контакты</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
+      <div class="main_header_bottom center">
+        <nav class="main_navigation">
+          <ul class="navigation_list flex_block">
+            <li class="navigation_item"><a href="">Главная</a></li>
+            <li class="navigation_item"><a href="">Компания</a></li>
+            <li class="navigation_item"><a href="">Каталог</a></li>
+            <li class="navigation_item"><a href="">Новости</a></li>
+            <li class="navigation_item"><a href="">Спецпредложения</a></li>
+            <li class="navigation_item"><a href="">Доставка</a></li>
+            <li class="navigation_item"><a href="">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
 		<main class="container">
 			<h1 class="visually_hidden">Каталог</h1>
@@ -184,49 +192,53 @@
 		</main>
 
 		<footer class="page_footer main_footer">
-      <div class="footer_top">
-        <div class="footer_first_layer">
-          <a class="logo" href="">ТЕХНОМАРТ</a><!-- логотип-ссылка на главную страницу-->
-          <ul class="first_layer_list">
-            <li class="first_layer_item hover_underline"><a href="">Компания</a></li>
-            <li class="first_layer_item hover_underline"><a href="">Новости</a></li>
-            <li class="first_layer_item hover_underline"><a href="">Каталог</a></li>
-            <li class="first_layer_item hover_underline"><a href="">Доставка</a></li>
-            <li class="first_layer_item hover_underline"><a href="">Контакты</a></li>
-          </ul>
+      <div class="footer_top_one center flex_block">
+        <div class="footer_top_logo flex_block">
+          <a class="logo section_title_line_text" href="">ТЕХНОМАРТ</a>
         </div>
+        <ul class="footer_top_container flex_block">
+          <li class="footer_top_one_item hover_underline"><a href="">Компания</a></li>
+          <li class="footer_top_one_item hover_underline"><a href="">Новости</a></li>
+          <li class="footer_top_one_item hover_underline"><a href="">Каталог</a></li>
+          <li class="footer_top_one_item hover_underline"><a href="">Доставка</a></li>
+          <li class="footer_top_one_item hover_underline"><a href="">Контакты</a></li>
+        </ul>
+      </div>
 
-        <div class="footer_top_second_layer">
-          <p class="footer_second_layer_text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>+7 (812) 555-05-55</p>
-          <ul class="footer_second_layer_list">
-            <li class="second_layer_item hover_underline"><a href="">Материалы</a></li>
-            <li class="second_layer_item hover_underline"><a href="">Техника</a></li>
-            <li class="second_layer_item hover_underline"><a href="">Инструмент</a></li>
-            <li class="second_layer_item hover_underline"><a href="">Спецпредложения</a></li>
-          </ul>
+      <div class="footer_top_two center flex_block">
+        <div class="footer_top_two_address">
+          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>+7 (812) 555-05-55</p>
         </div>
+          <ul class="footer_top_container flex_block">
+            <li class="footer_top_two_item hover_underline"><a href="">Материалы</a></li>
+            <li class="footer_top_two_item hover_underline"><a href="">Техника</a></li>
+            <li class="footer_top_two_item hover_underline"><a href="">Инструмент</a></li>
+            <li class="footer_top_two_item hover_underline"><a href="">Спецпредложения</a></li>
+          </ul>
       </div>
 
       <div class="footer_bottom">
-        <div class="footer_copyright">
-          <p class="copyright_text">© 2010–2019 Компания &lt;&lt;Техномарт&gt;&gt;<br>Все права защищены</p>
-        </div>
-        <div class="footer_social">
-          <ul class="social_list">
-            <li class="social_item">
-              <img src="https://via.placeholder.com/26x15" alt="Иконка Вконтакте">Вконтакте
-            </li>
-            <li class="social_item">
-              <img src="https://via.placeholder.com/26x15" alt="Иконка Фейсбук">Фейсбук
-            </li>
-            <li class="social_item">
-              <img src="https://via.placeholder.com/26x15" alt="Иконка Инстаграмм">Инстаграмм
-            </li>
-          </ul>
-        </div>
-        <div class="footer_reference">
-          <p class="reference_text hover_underline">Обратная связь:<br><a href="mailto:mail@htmlacademy.ru"> mail@htmlacademy.ru</a></p>
-          <p class="reference_text hover_underline">Разработано-<br><a href="https://htmlacademy.ru">htmlacademy.ru</a></p>
+        <div class="footer_bottom_container flex_block center">
+          <div class="footer_copyright">
+            <p class="copyright_text">© 2010–2019 Компания &lt;&lt;Техномарт&gt;&gt;<br>Все права защищены</p>
+          </div>
+          <div class="footer_social">
+            <ul class="social_list flex_block">
+              <li class="social_item">
+                <img src="https://via.placeholder.com/26x15" alt="Иконка Вконтакте">
+              </li>
+              <li class="social_item">
+                <img src="https://via.placeholder.com/26x15" alt="Иконка Фейсбук">
+              </li>
+              <li class="social_item">
+                <img src="https://via.placeholder.com/26x15" alt="Иконка Инстаграмм">
+              </li>
+            </ul>
+          </div>
+          <div class="footer_reference flex_block">
+            <p class="reference_text hover_underline">Обратная связь:<br><a href="mailto:mail@htmlacademy.ru"> mail@htmlacademy.ru</a></p>
+            <p class="reference_text hover_underline">Разработано --<br><a href="https://htmlacademy.ru">htmlacademy.ru</a></p>
+          </div>
         </div>
       </div>
     </footer>

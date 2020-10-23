@@ -27,7 +27,7 @@
           <a class="header_phone" href="tel:+7(812)555-05-55">+7 (812) 555-05-55</a>
           <p class="header_address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
-        <div class="header_middle_item">
+        <div class="header_middle_item flex_block">
           <a class="login_link" href="">Войти</a>
           <a class ="check_in" href="">Регистрация</a>
         </div>
@@ -50,29 +50,54 @@
 	</header>
 
 	<main class="main_container">
-		<!-- <h1 class="visually_hidden">Техномарт</h1> -->
+		<h1 class="visually_hidden">Техномарт</h1>
 		<section class="promo center">
-			<!-- <h2 class="visually_hidden">Промо-блок</h2> -->
+			<h2 class="visually_hidden">Промо-блок</h2>
 			<ul class="promo_list">
-				<li class="promo_item materials">
-          <p class="promo_item_text">Материалы</p>
-          <button class="button promo_item_button" type="button">НА ЛЮБОЙ ВКУС</button>
+				<li class="promo_item materials flex_block">
+          <div class="promo_item_content flex_block">
+            <p class="promo_item_text">Материалы</p>
+            <button class="button promo_item_button" type="button">НА ЛЮБОЙ ВКУС</button>
+          </div>
+          <div class="promo_item_decor flex_block">
+            <!--background-image-SVG-->
+          </div>
         </li>
-				<li class="promo_item instruments">
-					<p class="promo_item_text">Инструмент</p>
-					<button class="button promo_item_button"" type="button">НА ВСЕ СЛУЧАИ</button>
+				<li class="promo_item instruments flex_block">
+          <div class="promo_item_content flex_block">
+            <p class="promo_item_text">Инструмент</p>
+            <button class="button promo_item_button" type="button">НА ВСЕ СЛУЧАИ</button>
+          </div>
+          <div class="promo_item_decor flex_block">
+            <!--background-image-SVG-->
+          </div>
 				</li>
-				<li class="promo_item technics">
-					<p class="promo_item_text">Техника</p>
-					<button class="button promo_item_button"" type="button">ДЛЯ СТРОЙКИ</button>
+				<li class="promo_item technics flex_block">
+          <div class="promo_item_content flex_block">
+            <p class="promo_item_text">Техника</p>
+            <button class="button promo_item_button" type="button">ДЛЯ СТРОЙКИ</button>
+          </div>
+          <div class="promo_item_decor flex_block">
+            <!--background-image-SVG-->
+          </div>
 				</li>
-				<li class="promo_item discount">
-					<p class="promo_item_text">Скидка 50%</p>
-					<button class="button promo_item_button"" type="button">НА 350 ТОВАРОВ</button>
+				<li class="promo_item discount flex_block">
+          <div class="promo_item_content flex_block">
+            <p class="promo_item_text">Скидка 50%</p>
+            <button class="button promo_item_button" type="button">НА 350 ТОВАРОВ</button>
+          </div>
+          <div class="promo_item_decor flex_block">
+            <!--background-image-SVG-->
+          </div>
 				</li>
-				<li class="promo_item delivery">
-					<p class="promo_item_text">Доставка</p>
-					<button class="button promo_item_button"" type="button">БЕСПЛАТНО</button>
+				<li class="promo_item delivery flex_block">
+          <div class="promo_item_content flex_block">
+            <p class="promo_item_text">Доставка</p>
+            <button class="button promo_item_button" type="button">БЕСПЛАТНО</button>
+          </div>
+          <div class="promo_item_decor flex_block">
+            <!--background-image-SVG-->
+          </div>
 				</li>
         <li><!-- Здесь будет слайдер-->
           <div class="slaider_perforators">
@@ -85,7 +110,7 @@
     </section>
 
 		<section class="popular_products">
-			<!-- <h2 class="visually_hidden">Популярные товары</h2> -->
+			<h2 class="visually_hidden">Популярные товары</h2>
 			<div class="section_title_line popular_products_title_line center">
 				<p class="section_title_line_text popular_products_title_text">Популярные товары:</p>
 				<button class="button button_red button_in_title_line" type="button">Все популярные товары</button>
@@ -127,7 +152,7 @@
 		</section>
 
 		<section class="popular_producers center">
-			<!-- <h2 class="visually_hidden">Популярные производители</h2> -->
+			<h2 class="visually_hidden">Популярные производители</h2>
 			<div class="section_title_line">
 				<p class="section_title_line_text">Популярные производители:</p>
 				<button class="button button_red" type="button">Все производители</button>
@@ -165,7 +190,7 @@
 		</section>
 
 		<section class="contacts center">
-			<!-- <h2 class="visually_hidden">Контакты</h2> -->
+			<h2 class="visually_hidden">Контакты</h2>
 			<div class="transport_company flex_block">
 				<p class="template_one_title_text">Компания &lt;&lt;Техномарт&gt;&gt;</p>
 				<p class="template_two_text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для<br>ремонта и строительства не оставит равнодушными любителей сэкономить на<br>гастарбайтерах.</p>
@@ -188,7 +213,7 @@
 	<footer class="page_footer main_footer">
     <div class="footer_top_one center flex_block">
       <div class="footer_top_logo flex_block">
-        <a class="logo section_title_line_text" href="">ТЕХНОМАРТ</a><!-- логотип-ссылка на главную страницу-->
+        <a class="logo section_title_line_text" href="">ТЕХНОМАРТ</a>
       </div>
       <ul class="footer_top_container flex_block">
         <li class="footer_top_one_item hover_underline"><a href="">Компания</a></li>
@@ -199,7 +224,7 @@
       </ul>
     </div>
 
-    <div class="footer_top_two center">
+    <div class="footer_top_two center flex_block">
       <div class="footer_top_two_address">
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>+7 (812) 555-05-55</p>
       </div>
@@ -219,19 +244,19 @@
         <div class="footer_social">
           <ul class="social_list flex_block">
             <li class="social_item">
-              <img src="https://via.placeholder.com/26x15" alt="Иконка Вконтакте">Вконтакте
+              <img src="https://via.placeholder.com/26x15" alt="Иконка Вконтакте">
             </li>
             <li class="social_item">
-              <img src="https://via.placeholder.com/26x15" alt="Иконка Фейсбук">Фейсбук
+              <img src="https://via.placeholder.com/26x15" alt="Иконка Фейсбук">
             </li>
             <li class="social_item">
-              <img src="https://via.placeholder.com/26x15" alt="Иконка Инстаграмм">Инстаграмм
+              <img src="https://via.placeholder.com/26x15" alt="Иконка Инстаграмм">
             </li>
           </ul>
         </div>
         <div class="footer_reference flex_block">
           <p class="reference_text hover_underline">Обратная связь:<br><a href="mailto:mail@htmlacademy.ru"> mail@htmlacademy.ru</a></p>
-          <p class="reference_text hover_underline">Разработано-<br><a href="https://htmlacademy.ru">htmlacademy.ru</a></p>
+          <p class="reference_text hover_underline">Разработано --<br><a href="https://htmlacademy.ru">htmlacademy.ru</a></p>
         </div>
       </div>
     </div>
