@@ -312,11 +312,6 @@ p, h1, h2, h3 {
   grid-column-end: 4;
 }
 
-.promo_list li:not(:last-child) {
-  padding-left: 20px;
-  padding-right: 30px;
-}
-
 .promo_item div:nth-of-type(1) {
   width: 135px;
   height: 80px;
@@ -398,49 +393,151 @@ p, h1, h2, h3 {
 
 .materials {
   background-color: var(--middle-yellow);
+  padding-left: 20px;
+  padding-right: 30px;
 }
 
 .instruments {
   background-color: var(--turquoise);
+  padding-left: 20px;
+  padding-right: 30px;
 }
 .technics {
   background-color: var(--white-purple);
+  padding-left: 20px;
+  padding-right: 30px;
 }
 
 .discount {
   background-color: var(--white-green);
+  padding-left: 20px;
+  padding-right: 30px;
 }
 
 .delivery {
   background-color: var(--middle-yellow);
+  padding-left: 20px;
+  padding-right: 30px;
 }
 
-.promo_list :nth-child(6) {
+.slider {
+  position: relative;
   width: 620px;
-  height: 266px;
-  background-image: url(/img/man-big-perf.jpg);
+  height: 260px;
   background-color: var(--black);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.slaider_perforators_title {
+.slider_item {
+  width: 620px;
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.slider_wrapper_1 {
+  background-image: url("../img/man-small-perf.jpg");
+}
+
+.slider_wrapper_2 {
+  background-image: url("../img/man-big-perf.jpg");
+}
+
+.hidden {
+  display: none;
+}
+
+.slide_title {
   font-size: 36px;
   line-height: 36px;
   color: var(--white);
   text-transform: uppercase;
+  padding-left: 20px;
+  padding-top: 20px;
 }
 
-.slaider_perforators_text {
+.slide_text {
   color: var(--white);
+  padding-left: 20px;
+  margin-top: 10px;
+  margin-bottom: auto;
 }
 
-.button_open_catalog:hover {
+.slide_button {
+  margin-left: 20px;
+  margin-bottom: 25px;
+}
+
+.slide_button:hover {
   background-color: var(--red-darken);
 }
 
-.button_open_catalog:focus {
+.slide_button:focus {
   background-color: var(--dark-red);
 }
 
+.slider_controls_one {
+  position: absolute;
+  left: 48%;
+  bottom: 11%;
+  z-index: 20;
+}
+
+.slider_controls_one button {
+  padding: 0;
+  width: 10px;
+  height: 10px;
+  background-color: var(--white);
+  border: 1px solid var(--white);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider_controls_one :first-child {
+  margin-right: 5px;
+}
+
+.slider_controls_one .current {
+  background-color: var(--red);
+}
+
+.slider_controls_two {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 40%;
+  z-index: 21;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider_controls_two button {
+  padding: 0;
+  width: 25px;
+  height: 40px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.slider_controls_two :first-child {
+  background-image: url("data:image/svg+xml,%3Csvg width='23' height='41' viewBox='0 0 23 41' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.83 0.965027L22.919 3.06403L5.13 20.947L22.977 38.886L20.887 40.985L0.951996 20.947L20.83 0.965027Z' fill='white'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-left: 20px;
+}
+
+.slider_controls_two :last-child {
+  background-image: url("data:image/svg+xml,%3Csvg width='23' height='41' viewBox='0 0 23 41' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.83 0.965027L22.919 3.06403L5.13 20.947L22.977 38.886L20.887 40.985L0.951996 20.947L20.83 0.965027Z' fill='white'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transform: rotate(180deg);
+  margin-right: 20px;
+}
 
 /*-------main-section-popular_products-------*/
 .popular_products {

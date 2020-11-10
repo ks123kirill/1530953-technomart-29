@@ -99,11 +99,28 @@
               <!--background-image-SVG-->
             </div>
           </li>
-          <li><!-- Здесь будет слайдер-->
-            <div class="slaider_perforators">
-              <p class="slaider_perforators_title">ПЕРФОРАТОРЫ</p>
-              <p class="slaider_perforators_text">Настоящие мужские игрушки</p>
-              <a class="button button_red button_open_catalog" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
+          <li>
+            <div class="slider slider_wrapper_1">
+              <ul class="slider_list">
+                <li class="slider_item slide">
+                    <h3 class="slide_title">Дрели</h3>
+                    <p class="slide_text">Соседям на радость!</p>
+                    <a class="button button_red slide_button" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
+                </li>
+                <li class="slider_item slide slide_current hidden">
+                  <h3 class="slide_title">ПЕРФОРАТОРЫ</h3>
+                  <p class="slide_text">Настоящие мужские игрушки</p>
+                  <a class="button button_red slide_button" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
+                </li>
+              </ul>
+              <div class="slider_controls_one">
+                <button class="current" type="button" aria-label="Первый слайд"></button>
+                <button type="button" aria-label="Второй слайд"></button>
+              </div>
+              <div class="slider_controls_two">
+                <button type="button" aria-label="Влево"></button>
+                <button type="button" aria-label="Вправо"></button>
+              </div>
             </div>
           </li>
         </ul>
