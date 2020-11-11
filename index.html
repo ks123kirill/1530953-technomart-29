@@ -102,24 +102,24 @@
           <li>
             <div class="slider slider_wrapper_1">
               <ul class="slider_list">
-                <li class="slider_item slide">
+                <li class="slider_item slide_one">
                     <h3 class="slide_title">Дрели</h3>
                     <p class="slide_text">Соседям на радость!</p>
                     <a class="button button_red slide_button" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
                 </li>
-                <li class="slider_item slide slide_current hidden">
+                <li class="slider_item slide_two slide_hidden">
                   <h3 class="slide_title">ПЕРФОРАТОРЫ</h3>
                   <p class="slide_text">Настоящие мужские игрушки</p>
                   <a class="button button_red slide_button" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
                 </li>
               </ul>
               <div class="slider_controls_one">
-                <button class="current" type="button" aria-label="Первый слайд"></button>
-                <button type="button" aria-label="Второй слайд"></button>
+                <button class="slider_button_one current" type="button" aria-label="Первый слайд"></button>
+                <button class="slider_button_two" type="button" aria-label="Второй слайд"></button>
               </div>
               <div class="slider_controls_two">
-                <button type="button" aria-label="Влево"></button>
-                <button type="button" aria-label="Вправо"></button>
+                <button class="button_slide_left" type="button" aria-label="Влево"></button>
+                <button class="button_slide_right" type="button" aria-label="Вправо"></button>
               </div>
             </div>
           </li>
@@ -193,16 +193,33 @@
             <p class="template_two_text">Хороший интернет-магазин отличается от плохого не только ценами!<br>
             Мы стараемся изо всех сил, чтобы сделать ваши услуги приятными.</p>
           </div>
-          <!--Здесь будет слайдер -->
+
           <div class="services_block_two">
-            <button class="button services_slider_button">Доставка</button>
-            <button class="button services_slider_button">Гарантия</button>
-            <button class="button services_slider_button">Кредит</button>
+            <button class="button services_slider_button button_delivery">Доставка</button>
+            <button class="button services_slider_button button_guarantee">Гарантия</button>
+            <button class="button services_slider_button button_credit">Кредит</button>
           </div>
-          <div class="services_block_three">
+
+          <ul class="services_block_three services_wrapper_1">
+            <li class="services_item services_slide_one">
+              <p class="template_one_title_text">Доставка</p>
+              <p class="template_two_text">Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно!<br>Ведь мы неплохо заработаем,<br>поднимая его на ваш этаж!</p>
+            </li>
+            <li class="services_item services_slide_two slide_hidden">
+              <p class="template_one_title_text">Гарантия</p>
+              <p class="template_two_text">Если купленный у нас товар поломается или заискрит,<br>а также в случае пожара, спровоцированного его<br> возгоранием, вы всегда можете быть уверены в нашей<br>гарантии. Мы обменяем сгоревший товар на новый.<br>Дом уж восстановите как-нибудь сами.</p>
+            </li>
+            <li class="services_item services_slide_thee slide_hidden">
+              <p class="template_one_title_text">Кредит</p>
+              <p class="template_two_text">Залезть в долговую яму стало проще!<br> Кредитные консультанты придут вам на помощь.</p>
+              <button class="button button_red" type="button">Отправить заявку</button>
+            </li>
+
+          </ul>
+          <!-- <div class="services_block_three">
             <p class="template_one_title_text">Доставка</p>
             <p class="template_two_text">Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно!<br>Ведь мы неплохо заработаем,<br>поднимая его на ваш этаж!</p>
-          </div>
+          </div> -->
         </div>
       </section>
 
@@ -290,5 +307,8 @@
       <!--Здесь будет карта-->
       <button class="modal_close" type="button">Закрыть</button>
     </div>
+    <script src="./js/script.js">
+      // console.log('Привет от JSS!');
+    </script>
 	</body>
 </html>
