@@ -27,7 +27,7 @@ slideRight.onclick = function() {
 
 //services slider
 let buttonDelivery = document.querySelector('.button_delivery');
-let buttonGuarantee = document.querySelector('.button_quarantee');
+let buttonGuarantee = document.querySelector('.button_guarantee');
 let buttonCredit = document.querySelector('.button_credit');
 let servicesBlockThree = document.querySelector('.services_block_three');
 let servicesSlideOne = document.querySelector('.services_slide_one');
@@ -41,16 +41,22 @@ buttonDelivery.onclick = function() {
   servicesSlideOne.classList.remove('slide_hidden')
   servicesSlideTwo.classList.add('slide_hidden');
   servicesSlideThree.classList.add('slide_hidden');
-}
+  buttonDelivery.classList.add('services_button_current');
+  buttonGuarantee.classList.remove('services_button_current');
+  buttonCredit.classList.remove('services_button_current');
+};
 
 buttonGuarantee.onclick = function() {
+  servicesBlockThree.classList.add('services_wrapper_2');
   servicesBlockThree.classList.remove('services_wrapper_1');
   servicesBlockThree.classList.remove('services_wrapper_3');
-  servicesBlockThree.classList.add('services_wrapper_2');
   servicesSlideOne.classList.add('slide_hidden')
   servicesSlideTwo.classList.remove('slide_hidden');
   servicesSlideThree.classList.add('slide_hidden');
-}
+  buttonDelivery.classList.remove('services_button_current');
+  buttonGuarantee.classList.add('services_button_current');
+  buttonCredit.classList.remove('services_button_current');
+};
 
 buttonCredit.onclick = function() {
   servicesBlockThree.classList.remove('services_wrapper_1');
@@ -59,5 +65,10 @@ buttonCredit.onclick = function() {
   servicesSlideOne.classList.add('slide_hidden')
   servicesSlideTwo.classList.add('slide_hidden');
   servicesSlideThree.classList.remove('slide_hidden');
-}
+  buttonDelivery.classList.remove('services_button_current');
+  buttonGuarantee.classList.remove('services_button_current');
+  buttonCredit.classList.add('services_button_current');
+};
+
+
 
