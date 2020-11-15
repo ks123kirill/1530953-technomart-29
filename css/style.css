@@ -718,6 +718,7 @@ p, h1, h2, h3 {
   color: var(--white);
 }
 
+.services_button_current,
 .services_button_current:focus {
   background-color: var(--white);
   color: var(--dark-blue);
