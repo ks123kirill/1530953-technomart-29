@@ -850,6 +850,41 @@ p, h1, h2, h3 {
 
 /*-------catalog-main-section-bread_crumbs------*/
 
+.catalog_block {
+  display: grid;
+  grid-template-columns: 220px 700px;
+  grid-template-rows: 35px 1010px 80px;
+  grid-gap: 30px 20px;
+}
+
+.product_filter {
+  grid-row-start: 1;
+  grid-row-end: -1;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.product_sort {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: -1;
+}
+
+.catalog_list {
+  display: grid;
+  grid-template-columns: repeat(3, 220px);
+  grid-template-rows: 330px 330px 330px;
+  grid-gap: 20px;
+}
+
+.catalog_page_list {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: -1;
+}
+
 .bread_crumbs_list {
   height: 60px;
   flex-direction: row;
