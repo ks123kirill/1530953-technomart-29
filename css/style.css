@@ -7,6 +7,7 @@
   --dark-blue: #32425C;
   --grey: #C5C5C5;
   --grey-border: #EAEAEA;
+  --grey-dark: #ababab;
   --grey-hover: rgba(197, 197, 197, 0.3);
   --grey-focus: rgba(197, 197, 197, 0.6);
   --dark-red: #BA2732;
@@ -15,12 +16,14 @@
   --dark-yellow: #FFC047;
   --middle-yellow: #ffbf47;
   --white-yellow: #FFD180;
+  --whiten-yellow: #F7F3EC;
   --turquoise: #3BBCE3;
   --white-purple: #DC91D8;
   --basic-dark-green: #63A63E;
   --hover-green: #5FBB2D;
   --focus-green: #518534;
   --white-green: #8ED78F;
+  --fresh-green: #00ca74;
   --blue: #F2F6F8;
   --dark-pink: #F7F3EC;
   --grey-pink:  #F9F5F0;
@@ -28,6 +31,7 @@
   --white: #FFFFFF;
   --white-a03:  rgba(255, 255, 255, 0.3);
   --focus-white: rgba(255, 255, 255, 0.5);
+
 
 
 
@@ -802,14 +806,14 @@ p, h1, h2, h3 {
 }
 
 .transport_company p:nth-of-type(2),
- p:nth-of-type(3),
+.transport_company p:nth-of-type(3),
 .map p:nth-of-type(2) {
   padding-top: 30px;
   padding-bottom: 0px;
 }
 
 .transport_company div:nth-of-type(1),
- div:nth-of-type(2) {
+.transport_company div:nth-of-type(2) {
   padding-bottom: 15px;
  }
 
@@ -850,6 +854,52 @@ p, h1, h2, h3 {
 
 /*-------catalog-main-section-bread_crumbs------*/
 
+.filter_item {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.range_controls {
+  position: relative;
+  height: 37px;
+  background-color: var(--whiten-yellow);
+  border-radius: 5px;
+  padding: 37px 20px 0 30px;
+  margin-bottom: 5px;
+}
+
+.range_controls .scale {
+  height: 2px;
+  background-color: var(--grey);
+}
+
+.range_controls .bar {
+  width: 70%;
+  height: 2px;
+  background-color: var(--fresh-green);
+}
+
+.range_controls .toggle {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  border: 8px solid var(--white);
+  background-color: var(--grey-dark);
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 var(--grey);
+  cursor: pointer;
+}
+
+.range_controls .toggle_min {
+  left: 30px;
+}
+
+.range_controls .toggle_max {
+  left: 150px;
+}
 .catalog_block {
   display: grid;
   grid-template-columns: 220px 700px;
@@ -901,7 +951,7 @@ p, h1, h2, h3 {
   color: var(--black);
 }
 
-.section_title_line {
+.bread_crumbs_last_title {/*не нравится название класса -  переделать*/
   background-color: var(--blue);
 }
 
