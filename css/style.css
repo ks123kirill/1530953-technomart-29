@@ -1,4 +1,5 @@
 /*Variables*/
+
 :root {
   /*basic*/
   --black: #000000;
@@ -32,15 +33,13 @@
   --white-a03:  rgba(255, 255, 255, 0.3);
   --focus-white: rgba(255, 255, 255, 0.5);
 
-
-
-
   /*special*/
   --white-grey: #F4F4F4;
 }
 
 .page {
   width: 1200px;
+  height: 100%;
   margin: 0 auto;
   padding: 0px;
   background-color: var(--grey);
@@ -50,6 +49,8 @@
 .page_body {
   box-sizing: border-box;
   min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -854,52 +855,6 @@ p, h1, h2, h3 {
 
 /*-------catalog-main-section-bread_crumbs------*/
 
-.filter_item {
-  padding: 0;
-  margin: 0;
-  border: none;
-}
-
-.range_controls {
-  position: relative;
-  height: 37px;
-  background-color: var(--whiten-yellow);
-  border-radius: 5px;
-  padding: 37px 20px 0 30px;
-  margin-bottom: 5px;
-}
-
-.range_controls .scale {
-  height: 2px;
-  background-color: var(--grey);
-}
-
-.range_controls .bar {
-  width: 70%;
-  height: 2px;
-  background-color: var(--fresh-green);
-}
-
-.range_controls .toggle {
-  position: absolute;
-  top: 28px;
-  left: 0;
-  width: 4px;
-  height: 4px;
-  border: 8px solid var(--white);
-  background-color: var(--grey-dark);
-  border-radius: 50%;
-  box-shadow: 0 2px 1px 0 var(--grey);
-  cursor: pointer;
-}
-
-.range_controls .toggle_min {
-  left: 30px;
-}
-
-.range_controls .toggle_max {
-  left: 150px;
-}
 .catalog_block {
   display: grid;
   grid-template-columns: 220px 700px;
@@ -912,6 +867,20 @@ p, h1, h2, h3 {
   grid-row-end: -1;
   grid-column-start: 1;
   grid-column-end: 2;
+}
+
+.product_filter h2,
+.product_sort h2 {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--black);
+  text-align: left;
+  padding: 5px 0 5px 20px;
+  background-color: var(--whiten-yellow);
 }
 
 .product_sort {
@@ -953,6 +922,82 @@ p, h1, h2, h3 {
 
 .bread_crumbs_last_title {/*не нравится название класса -  переделать*/
   background-color: var(--blue);
+}
+
+.filter_item {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.filter_item legend:nth-of-type(1) {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--black);
+  text-align: left;
+  padding: 10px 0 10px 0;
+}
+
+.range_controls {
+  position: relative;
+  height: 37px;
+  background-color: var(--whiten-yellow);
+  border-radius: 5px;
+  padding: 37px 20px 0 25px;
+  margin-bottom: 5px;
+}
+
+.range_controls .scale {
+  height: 2px;
+  background-color: var(--grey);
+}
+
+.range_controls .bar {
+  width: 70%;
+  height: 2px;
+  background-color: var(--fresh-green);
+}
+
+.range_controls .toggle {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  border: 8px solid var(--white);
+  background-color: var(--grey-dark);
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 var(--grey);
+  cursor: pointer;
+}
+
+.range_controls .toggle_min {
+  left: 20px;
+}
+
+.range_controls .toggle_max {
+  left: 150px;
+}
+
+.price_controls input {
+  width: 95px;
+  height: 35px;
+  text-align: center;
+  color: var(--black);
+  border: none;
+  border-radius: 5px;
+  background-color: var(--whiten-yellow);
+  padding: 0;
+  margin-top: 5px;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
 }
 
 .catalog_page {
@@ -1069,6 +1114,30 @@ p, h1, h2, h3 {
   /* outline: 5px solid red; */
   height: 100px;
 }
+
+.social_item {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--blacken-blue);
+  border: none;
+  border-radius: 50%;
+  margin-right: 3px;
+}
+
+.social_item:hover,
+.social_item:focus {
+  background-color: var(--red);
+}
+
+.social_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .footer_copyright p,
 .footer_reference p {
