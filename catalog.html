@@ -53,22 +53,23 @@
 		<main class="main_container">
 			<h1 class="visually_hidden">Каталог</h1>
       <div class="center">
-        <ul class="bread_crumbs_list flex_block">
-          <li class="bread_crumbs"><a href="">Каталог</a></li>
-          <li class="bread_crumbs"><a href="">Инструмент</a></li>
-          <li class="bread_crumbs">Перфораторы</li>
+        <ul class="breadcrumbs">
+          <li><a href="">Каталог</a></li>
+          <li><a href="">Инструмент</a></li>
+          <li class="breadcrumbs_current">Перфораторы</li>
         </ul>
       </div>
 
-      <div class="section_title_line bread_crumbs_last_title center">
+      <div class="section_title_line breadcrumbs_last_title center">
         <p class="section_title_line_text">Перфораторы</p>
       </div>
 
 			<div class="center catalog_block">
-        <div class="product_filter">
+        <div class="filter_product">
           <h2>Фильтр:</h2>
           <form method="get">
-            <fieldset class="filter_item">
+
+            <fieldset class="filter_price">
               <legend>Цена:</legend>
               <div class="filter_range">
                 <div class="range_controls">
@@ -95,6 +96,47 @@
                 </div>
               </div>
             </fieldset>
+
+            <fieldset class="filter_producers">
+              <legend>Производители</legend>
+              <ul class="filter_producers_list">
+                <li>
+                  <input class="input_producers input_producers_checked" type="checkbox" name="BOSCH" id="filter_BOSCH">
+                  <label for="filter_BOSCH">BOSCH</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="INTERSCOL" id="filter_INTERSCOL">
+                  <label for="filter_INTERSCOL">ИНТЕРСКОЛ</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="MAKITA" id="filter_MAKITA">
+                  <label for="filter_MAKITA">MAKITA</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="DEWALT" id="filter_DEWALT">
+                  <label for="filter_DEWALT">DEWALT</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="HITACHI" id="filter_HITACHI">
+                  <label for="filter_HITACHI">HITACHI</label>
+                </li>
+              </ul>
+            </fieldset>
+
+            <fieldset class="filter_power">
+              <legend>Питание:</legend>
+              <ul class="filter_power_list">
+                <li>
+                  <input type="checkbox" name="rechargeable" id="filter_rechargeable">
+                  <label for="filter_rechargeable">Аккумуляторные</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="electrical_network" id="filter_electrical_network">
+                  <label for="filter_electrical_network">Сетевые</label>
+                </li>
+              </ul>
+            </fieldset>
+            <button type="button">Показать</button>
           </form>
         </div>
 
@@ -178,17 +220,17 @@
           </li>
         </ul>
 
-				<ul class="catalog_page_list">
-					<li class="catalog_page">
+				<ul class="pagination_list">
+					<li class="pagination_item pagination_item_current">
 						<a>1</a>
 					</li>
-					<li class="catalog_page">
+					<li class="pagination_item">
 						<a href="">2</a>
 					</li>
-					<li class="catalog_page">
+					<li class="pagination_item">
 						<a href="">3</a>
 					</li>
-					<li class="catalog_page">
+					<li class="pagination_item">
 						<a href="">Следующая</a>
 					</li>
 				</ul>

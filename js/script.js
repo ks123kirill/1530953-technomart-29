@@ -70,5 +70,11 @@ buttonCredit.onclick = function() {
   buttonCredit.classList.add('services_button_current');
 };
 
+//product_image_hover   надо разобрать mouseover
+
+let productItem = document.querySelector('.product_item');
+let productImage = document.querySelector('.product_image');
+let productImageHover = document.querySelector('.product_image_hover');
+
 
 
