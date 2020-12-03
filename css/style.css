@@ -946,7 +946,6 @@ p, h1, h2, h3 {
 
 .breadcrumbs li:first-of-type {
   margin-left: 60px;
-
 }
 
 .breadcrumbs li:first-of-type:before {
@@ -966,10 +965,16 @@ p, h1, h2, h3 {
 .filter_price,
 .filter_producers,
 .filter_power {
-  padding: 0;
+  padding: 20px 0 25px 0;
   margin: 0;
   border: none;
 }
+
+.filter_price,
+.filter_producers {
+  border-bottom: 1px solid var(--grey-border);
+}
+
 
 .filter_price legend:nth-of-type(1),
 .filter_producers legend:nth-of-type(1),
@@ -1055,13 +1060,70 @@ p, h1, h2, h3 {
   line-height: 18px;
 }
 
-.input_producers {
-  width: 30px;
-  height: 30px;
-  background-image: url("data:image/svg+xml,%3Csvg width='23' height='23' viewBox='0 0 23 23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M3 0H20C21.65 0 23 1.35 23 3V20C23 21.65 21.65 23 20 23H3C1.35 23 0 21.65 0 20V3C0 1.35 1.35 0 3 0ZM21 3C21 2.458 20.542 2 20 2H3C2.458 2 2 2.458 2 3V20C2 20.542 2.458 21 3 21H20C20.542 21 21 20.542 21 20V3Z' fill='%23C5C5C5'/%3E%3C/svg%3E%0A");
-  /* background-repeat: no-repeat;
+.filter_option {
+  padding-left: 35px;
+  padding-bottom: 15px;
+}
+
+.filter_option label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.filter_input_producers_checkbox + label::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -35px;
+  width: 23px;
+  height: 23px;
+  background-image: url(../img/checkbox-off.svg);
+  background-position: center;
   background-size: contain;
-  background-position: center; */
+  background-repeat: no-repeat;
+}
+
+.filter_input_producers_checkbox + label::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -35px;
+  width: 27px;
+  height: 23px;
+  background-color: var(--white);
+  background-image: url(../img/checkbox-on.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.filter_input_producers_radio + label::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -35px;
+  width: 25px;
+  height: 25px;
+  background-image: url(../img/radio-off.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.filter_input_producers_radio + label::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -35px;
+  width: 25px;
+  height: 25px;
+  background-color: var(--white);
+  background-image: url(../img/radio-on.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 /*---------------pagination---------------------------*/
