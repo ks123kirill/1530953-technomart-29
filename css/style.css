@@ -701,7 +701,85 @@ p, h1, h2, h3 {
 
 /*-------catalog-main-section-bread_crumbs------*/
 
+<<<<<<< Updated upstream
 .bread_crumbs_list {
+=======
+.catalog_block {
+  display: grid;
+  grid-template-columns: repeat(4, 220px);
+  grid-template-rows: 35px 320px 320px 320px 80px;
+  grid-gap: 20px 20px;
+}
+
+.filter_product {
+  grid-row-start: 1;
+  grid-row-end: -1;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+/* .sort_wrapper {
+  background-color: var(--whiten-yellow);
+} */
+
+/* .product_sort {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+} */
+
+.filter_product h2,
+.product_sort h2,
+.product_sort h3,
+.form_catalog button {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--black);
+  text-align: left;
+  padding: 10px 0 10px 20px;
+  background-color: var(--whiten-yellow);
+}
+
+.product_sort {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: -1;
+}
+
+.product_sort h2,
+.product_sort h3 {
+  display: inline;
+}
+
+
+.catalog_list {
+
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: -1;
+  display: grid;
+  grid-template-columns: repeat(3, 220px);
+  grid-template-rows: 330px 330px 330px;
+  grid-gap: 20px;
+}
+
+/* .pagination_list {
+  grid-row-start: 5;
+  grid-row-end: -1;
+  grid-column-start: 2;
+  grid-column-end: -1;
+} */
+
+.breadcrumbs {
+  display: flex;
+>>>>>>> Stashed changes
   height: 60px;
   flex-direction: row;
   justify-content: left;
@@ -721,7 +799,195 @@ p, h1, h2, h3 {
   background-color: var(--blue);
 }
 
+<<<<<<< Updated upstream
 .catalog_page {
+=======
+.filter_price,
+.filter_producers,
+.filter_power {
+  padding: 20px 0 25px 0;
+  margin: 0;
+  border: none;
+}
+
+.filter_price,
+.filter_producers {
+  border-bottom: 1px solid var(--grey-border);
+}
+
+
+.filter_price legend:nth-of-type(1),
+.filter_producers legend:nth-of-type(1),
+.filter_power legend:nth-of-type(1) {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--black);
+  text-align: left;
+  padding: 10px 0 0 0;
+}
+
+.filter_producers_list,
+.filter_power {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: var(--black);
+  text-align: left;
+}
+
+.range_controls {
+  position: relative;
+  height: 37px;
+  background-color: var(--whiten-yellow);
+  border-radius: 5px;
+  padding: 37px 20px 0 25px;
+  margin-bottom: 5px;
+}
+
+.range_controls .scale {
+  height: 2px;
+  background-color: var(--grey);
+}
+
+.range_controls .bar {
+  width: 70%;
+  height: 2px;
+  background-color: var(--fresh-green);
+}
+
+.range_controls .toggle {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  border: 8px solid var(--white);
+  background-color: var(--grey-dark);
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 var(--grey);
+  cursor: pointer;
+}
+
+.range_controls .toggle_min {
+  left: 20px;
+}
+
+.range_controls .toggle_max {
+  left: 150px;
+}
+
+.price_controls input {
+  width: 95px;
+  height: 35px;
+  text-align: center;
+  color: var(--black);
+  border: none;
+  border-radius: 5px;
+  background-color: var(--whiten-yellow);
+  padding: 0;
+  margin-top: 5px;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.filter_option {
+  padding-left: 35px;
+}
+
+.filter_option:not(:last-of-type) {
+  padding-bottom: 15px;
+}
+
+.form_catalog button {
+  background-color: var(--white);
+  border: 1px solid var(--grey-border2);
+  padding: 10px 77px;
+}
+
+.filter_option label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.filter_input_producers_checkbox + label::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -35px;
+  width: 23px;
+  height: 23px;
+  background-image: url(../img/checkbox-off.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.filter_input_producers_checkbox + label::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -35px;
+  width: 27px;
+  height: 23px;
+  background-color: var(--white);
+  background-image: url(../img/checkbox-on.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.filter_input_producers_radio + label::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -35px;
+  width: 25px;
+  height: 25px;
+  background-image: url(../img/radio-off.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.filter_input_producers_radio + label::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -35px;
+  width: 25px;
+  height: 25px;
+  background-color: var(--white);
+  background-image: url(../img/radio-on.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/*---------------pagination---------------------------*/
+
+.pagination_list {
+  grid-row-start: 5;
+  grid-row-end: -1;
+  grid-column-start: 2;
+  grid-column-end: -1;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+>>>>>>> Stashed changes
   font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
