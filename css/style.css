@@ -862,7 +862,7 @@ p, h1, h2, h3 {
   padding-right: 51px;
 }
 
-/*-------catalog-main-section-bread_crumbs------*/
+/*-------catalog-main-section------*/
 
 .catalog_block {
   display: grid;
@@ -878,8 +878,8 @@ p, h1, h2, h3 {
   grid-column-end: 2;
 }
 
-.filter_product h2,
-.product_sort h2 {
+.filter_product p,
+.product_sort p {
   font-family: PT Sans;
   font-style: normal;
   font-weight: 400;
@@ -904,13 +904,6 @@ p, h1, h2, h3 {
   grid-template-columns: repeat(3, 220px);
   grid-template-rows: 330px 330px 330px;
   grid-gap: 20px;
-}
-
-.catalog_page_list {
-  grid-row-start: 3;
-  grid-row-end: 4;
-  grid-column-start: 2;
-  grid-column-end: -1;
 }
 
 .breadcrumbs {
@@ -987,7 +980,7 @@ p, h1, h2, h3 {
   text-transform: uppercase;
   color: var(--black);
   text-align: left;
-  padding: 10px 0 10px 0;
+  padding-top: 10px;
 }
 
 .filter_producers_list,
@@ -1062,7 +1055,16 @@ p, h1, h2, h3 {
 
 .filter_option {
   padding-left: 35px;
+}
+
+.filter_option:not(:last-of-type) {
   padding-bottom: 15px;
+}
+
+.form_catalog button {
+  background-color: var(--white);
+  border: 1px solid var(--grey-border2);
+  padding: 10px 77px;
 }
 
 .filter_option label {
@@ -1129,6 +1131,10 @@ p, h1, h2, h3 {
 /*---------------pagination---------------------------*/
 
 .pagination_list {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: -1;
   display: flex;
   flex-wrap: wrap;
   margin: 0;
