@@ -127,6 +127,32 @@ p, h1, h2, h3 {
 
  .header_top_container {
   height: 45px;
+  /* position: relative; */
+ }
+
+ .header_top_container a {
+   display: block;
+ }
+
+ .header_marks,
+ .header_backet {
+  position: relative;
+ }
+
+ .header_marks:before {
+  content: url(../img/icon-bookmark.svg);
+  position: absolute;
+  top: 13px;
+  left: -10px;
+  opacity: 0.5;
+ }
+
+ .header_backet:before {
+  content: url(../img/icon-cart.svg);
+  position: absolute;
+  top: 11px;
+  left: -10px;
+  opacity: 0.5;
  }
 
 .header_top_item {
@@ -277,8 +303,10 @@ p, h1, h2, h3 {
 }
 
 .navigation_item a {
+  display: block;
   color: var(--white);
   background-color: var(--dark-blue);
+  padding: 18px 31px;
 }
 
 .navigation_item a:hover {
@@ -287,7 +315,8 @@ p, h1, h2, h3 {
 
 .navigation_item a:focus {
   background-color: var(--blacken-blue);
-  opacity: 0.5;
+  /* opacity: 0.5; */
+  color: var(--grey-dark);
 }
 
 /*-------main-section promo-------*/
@@ -671,6 +700,20 @@ p, h1, h2, h3 {
   border: 1px solid var(--grey-border);
 }
 
+.producer_item a {
+  display: block;
+  padding: 10px;  /*Как сделать кликабельной весь контейнер?*/
+}
+
+.producer_item:hover {
+  box-shadow: 0 0 10px 3px var(--grey-border2);
+}
+
+.producer_item a:focus {
+  /* box-shadow: 0 0 10px 10px var(--grey-border2); */
+  opacity: 0.5;
+}
+
 /*-------main-section-services-------*/
 .services {
   background-color: var(--white-blue);
@@ -886,7 +929,6 @@ p, h1, h2, h3 {
   background-color: var(--whiten-yellow);
 }
 
-
 .filter_product p,
 .product_sort p {
   font-family: PT Sans;
@@ -898,16 +940,20 @@ p, h1, h2, h3 {
   color: var(--black);
 }
 
+.sort_block_2 {
+  padding-right: 40px;
+}
+
 .sort_block p {
   color: var(--grey);
+  border-bottom: 1px dotted var(--red);
 }
-
-
 
 .filter_product p,
-.product_sort :nth-child(2) {
+.sort_block_1 {
   padding: 5px 0 5px 20px;
 }
+
 
 .product_sort {
   display: grid;
@@ -928,32 +974,38 @@ p, h1, h2, h3 {
   align-items: center;
 }
 
-.sort_block_2 :nth-child(2) {
-  padding-right: 40px;
-}
-
 .sort_block_3 {
-  position: relative;
+  padding-right: 15px;
 }
 
-.sort_block_3 p::before {
-  content: url(../img/triangle_red.svg);
-
-  position: absolute;
-  top: 10px;
-  left: 165px;
-  background-color: transparent;
+.sort_decorate_1  {
+  padding-left: 40px;
 }
 
-.sort_block_3 p::after {
-  content: url(../img/triangle_grey.svg);
-  position: absolute;
-  top: 10px;
-  left: 195px;
-  background-color: transparent;
+.sort_decorate_2 {
+  transform: rotate(180deg);
+  padding-right: 20px;
 }
 
+.sort_block p:hover {
+  color: var(--black);
+  border-bottom: 1px solid var(--black);
+}
 
+.sort_decorate_1 path:hover,
+.sort_decorate_2 path:hover {
+  fill: var(--black);
+}
+
+.sort_block p:active {
+  color: var(--red);
+  border: none;
+}
+
+.sort_decorate_1 path:active,
+.sort_decorate_2 path:active {
+  fill: var(--red);
+}
 
 .catalog_list {
   display: grid;
@@ -968,7 +1020,6 @@ p, h1, h2, h3 {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-
 }
 
 .breadcrumbs li {
