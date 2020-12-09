@@ -609,6 +609,8 @@ p, h1, h2, h3 {
 }
 
 .product_item {
+  width: 220px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -616,6 +618,10 @@ p, h1, h2, h3 {
   padding-bottom: 20px;
   border: 1px solid var(--grey-border);
   box-sizing: border-box;
+}
+
+.catalog_list .product_item {
+  margin-bottom: 18px;
 }
 
 .product_item div {
@@ -665,7 +671,7 @@ p, h1, h2, h3 {
 .button_new_price {
   box-sizing: border-box;
   width: 140px;
-  height: 40px;
+  height: auto;
   font-family: PT Sans;
   font-style: normal;
   font-weight: bold;
@@ -910,7 +916,7 @@ p, h1, h2, h3 {
 .catalog_block {
   display: grid;
   grid-template-columns: 220px 700px;
-  grid-template-rows: 40px 1030px 80px;
+  grid-template-rows: 40px 1fr 80px;
   grid-gap: 30px 20px;
 }
 
@@ -1008,10 +1014,15 @@ p, h1, h2, h3 {
 }
 
 .catalog_list {
-  display: grid;
-  grid-template-columns: repeat(3, 220px);
-  grid-template-rows: 330px 330px 330px;
-  grid-gap: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.catalog_list li:not(:nth-of-type(3n)) {
+  margin-right: 20px;
 }
 
 .breadcrumbs {
