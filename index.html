@@ -261,37 +261,34 @@
           <button class="modal_close" type="button" aria-label="Закрыть"></button>
         </div>
 
-        <div class="modal modal_write_us visually_hidden">
+        <div class="modal modal_write_us">
             <form class="form_write_us" action="https://echo.htmlacademy.ru/courses" method="POST">
               <div class="modal_block_1">
+
                 <fieldset>
-                  <!-- <p> -->
-                    <label>Ваше имя:</label>
-                    <input type="text" name="name" placeholder="Имя Фамилия">
-                  <!-- </p> -->
-                </fieldset>
-                <fieldset>
-                  <!-- <p> -->
-                    <label>Ваш e-mail:
-                      <input type="email" name="email" placeholder="email@example.com">
-                    </label>
-                  <!-- </p> -->
+                  <label for="name_field">Ваше имя:</label>
+                  <input type="text" name="name" id="name_field" placeholder="Имя Фамилия">
                 </fieldset>
 
-                  <label>Текст письма:
-                    <textarea rows="5" cols="50" placeholder="В свободной форме">
-                    </textarea>
-                  </label>
-
+                <fieldset>
+                  <label for="email_field">Ваш e-mail:</label>
+                  <input type="email" name="email" id="email_field" placeholder="email@example.com">
                 </fieldset>
+
+                <fieldset>
+                  <label for="modal_message">Текст письма:</label>
+                  <textarea name="message_text" id="modal_message" rows="5" cols="60">   В свободной форме</textarea>
+                </fieldset>
+
               </div>
 
               <div class="modal_block_2">
-                <button class="button button_red" type="submit">Отправить</button>
+                <input class="button button_red" type="submit" value="Отправить">
               </div>
 
             </form>
-          <button class="modal_close" type="submit" aria-label="Закрыть"></button>
+
+          <button class="modal_close" type="button" aria-label="Закрыть"></button>
         </div>
 
       </section>
@@ -308,6 +305,7 @@
           <li class="footer_top_one_item hover_underline"><a href="">Каталог</a></li>
           <li class="footer_top_one_item hover_underline"><a href="">Доставка</a></li>
           <li class="footer_top_one_item hover_underline"><a href="">Контакты</a></li>
+
         </ul>
       </div>
 
@@ -315,12 +313,12 @@
         <div class="footer_top_two_address">
           <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>+7 (812) 555-05-55</p>
         </div>
-          <ul class="footer_top_container flex_block">
-            <li class="footer_top_two_item hover_underline"><a href="">Материалы</a></li>
-            <li class="footer_top_two_item hover_underline"><a href="">Техника</a></li>
-            <li class="footer_top_two_item hover_underline"><a href="">Инструмент</a></li>
-            <li class="footer_top_two_item hover_underline"><a href="">Спецпредложения</a></li>
-          </ul>
+        <ul class="footer_top_container flex_block">
+          <li class="footer_top_two_item hover_underline"><a href="">Материалы</a></li>
+          <li class="footer_top_two_item hover_underline"><a href="">Техника</a></li>
+          <li class="footer_top_two_item hover_underline"><a href="">Инструмент</a></li>
+          <li class="footer_top_two_item hover_underline"><a href="">Спецпредложения</a></li>
+        </ul>
       </div>
 
       <div class="footer_bottom">
